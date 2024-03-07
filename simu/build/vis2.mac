@@ -1,0 +1,24 @@
+/run/numberOfThreads 1
+/run/initialize
+
+/vis/open OGL
+/vis/viewer/set/viewpointVector 0 0 0
+/vis/drawVolume
+/vis/viewer/set/autoRefresh true
+/vis/scene/add/trajectories smooth
+/vis/scene/add/eventID
+/vis/scene/endOfEventAction accumulate
+/vis/geometry/set/colour logicWorld 0 0 0 0 0
+/vis/geometry/set/colour logicPlastic 0 1 0 0 1
+/vis/geometry/set/colour logicAlu 0 0 1 0 0.3
+/vis/geometry/set/colour logicTape 0 0 0 1 0.3
+/vis/geometry/set/colour logicPmma1 0 0 1 1 0.3
+/vis/geometry/set/colour logicPmma2 0 0 1 1 0.3
+/vis/geometry/set/colour logicPmma3 0 0 1 1 0.3
+/vis/viewer/set/style surface
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add gamma
+/vis/filtering/trajectories/particleFilter-0/add e-
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set gamma white
+/vis/modeling/trajectories/drawByParticleID-0/set e- yellow

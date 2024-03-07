@@ -1,0 +1,13 @@
+/vis/verbose 0
+/control/verbose 0
+/process/verbose 0
+/event/verbose 0
+/cuts/verbose 0
+/run/verbose 0
+/material/verbose 0
+/analysis/verbose 0
+
+/run/numberOfThreads 44
+/run/initialize
+
+/run/beamOn 1000000
